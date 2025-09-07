@@ -1,5 +1,21 @@
 package motorcycles
 
+var (
+	Menu map[string]Motorcycle
+)
+
+func init() {
+	Menu = make(map[string]Motorcycle)
+	Menu["BMW_S1000RR"] = NewBMW_S1000RR()
+	Menu["DefaultMotorcycle"] = NewDefaultMotorcycle()
+	Menu["Ducati_Panigale_V2"] = NewDucati_Panigale_V2()
+	Menu["Ducati_Panigale_V4R"] = NewDucati_Panigale_V4R()
+	Menu["Kawasaki_ZX10RR"] = NewKawasaki_ZX10RR()
+	Menu["Kawasaki_ZX6R"] = NewKawasaki_ZX6R()
+	Menu["Yamaha_YZF_R1"] = NewYamaha_YZF_R1()
+	Menu["Yamaha_YZF_R7()"] = NewYamaha_YZF_R7()
+}
+
 type Motorcycle interface {
 	String() string
 }
