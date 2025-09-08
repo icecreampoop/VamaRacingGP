@@ -1,13 +1,9 @@
 package main
 
 import (
-	"fmt"
-	m "vamaracinggp/internal/motorcycles"
+	game "vamaracinggp/internal/game"
 )
 
 func main() {
-	for _, v := range m.Menu {
-		fmt.Println(v)
-		fmt.Println("-------------------------")
-	}
+	game.GameStart()
 }
