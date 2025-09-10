@@ -2,4 +2,5 @@ package http
 
 const (
 	SELECTALLFROMUSERTABLE = "SELECT * FROM users;"
+	SELECTALLFROMMOTORCYCLESTABLE = "SELECT * FROM motorcycles;"
 )
