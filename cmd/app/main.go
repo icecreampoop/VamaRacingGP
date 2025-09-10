@@ -1,7 +1,7 @@
 package main
 
 import (
-	game "vamaracinggp/internal/game"
+	game "vamaracinggp/internal/app/game"
 )
 
 func main() {
